@@ -1,0 +1,33 @@
+.container {
+    box-sizing: border-box;
+    margin: auto;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: calc(100% + 24px);
+        margin: -12px;
+    }
+    .col {
+        padding: 12px;
+        box-sizing: border-box;
+        flex-grow: 0;
+        max-width: 30%;
+        flex-basis: 30%;
+        &:nth-child(3n+3) {
+            max-width: 40%;
+            flex-basis: 40%;
+        }
+    }
+    .client {
+        background: #FFFFFF;
+        border-radius: 10px;
+        padding: 16px;
+        box-shadow: 0px 0px 3px 0px #c4c4c4;
+        font-size: 14px;
+        &__strong {
+            font-weight: 600;
+            margin-right: 8px;
+        }
+    }
+}

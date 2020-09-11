@@ -1,0 +1,77 @@
+.table-root {
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    border-radius: 10px;
+    width: 100%;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    display: table;
+    border-spacing: 0;
+    border-collapse: collapse;
+    thead {
+        background-color: #f9f9fb;
+        color: #333333;
+    }
+    &>tbody {
+        &>tr {
+            transition: background-color .25s ease;
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.04);
+            }
+        }
+    }
+    tr {
+        border-bottom: 1px solid rgba(224, 224, 224, 1);
+        box-sizing: content-box;
+        th {
+            font-weight: 600;
+            color: #333333;
+            text-transform: lowercase;
+        }
+    }
+    td, th {
+        padding: 16px;
+        font-size: 14px;
+        display: table-cell;
+        box-sizing: border-box;
+        height: 64px;
+    }
+    .left {
+        text-align: left;
+    }
+    .right {
+        text-align: right;
+    }
+    .center {
+        text-align: center;
+    }
+    .scope {
+        min-width: 220px;
+        text-transform: uppercase;
+    }
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    .title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+.delete {
+    color: #FF1744;
+    cursor: pointer;
+    padding: 8px;
+    transition: all .3s ease;
+    border: none;
+    background-color: transparent;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+        color: #D50000;
+    }
+}
