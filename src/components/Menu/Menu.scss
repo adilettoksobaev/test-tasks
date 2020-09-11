@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
     color: #fff;
+    overflow: hidden;
     &__logo {
         padding: 16px 24px;
         box-sizing: border-box;
@@ -52,6 +53,28 @@
             background-color: #F9F9FB;
             color: #1B73C2;
             border-radius: 4px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        width: 56px;
+        &__logo {
+            justify-content: center;
+            padding: 10px;
+            &-text {
+                display: none;
+            }
+        }
+        &__link {
+            justify-content: center;
+            &-text {
+                display: none;
+            }
+        }
+        &__row {
+            padding: 8px;
         }
     }
 }

@@ -5,7 +5,7 @@ body {
     padding: 0;
     margin: 0;
 }
-.containter {
+.main {
     margin-left: 200px;
     padding: 16px;
     max-width: 100%;
@@ -28,4 +28,10 @@ body {
     line-height: 1;
     box-sizing: border-box;
     font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        margin-left: 56px;
+    }
 }

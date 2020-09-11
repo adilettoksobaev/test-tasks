@@ -23,7 +23,7 @@ const App:React.FC<Props> = (props) => {
     return (
         <>
             <Menu />
-            <div className="containter">
+            <div className="main">
                 <Switch>
                     <Route 
                         path="/" 
